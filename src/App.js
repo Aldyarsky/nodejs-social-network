@@ -1,16 +1,17 @@
 import React, { Component } from "react";
-import { Button, Block } from "components";
+import { Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="wrapper">
-      <Block>
-        <Button type="primary" size="large">
-          This is Button
-        </Button>
-      </Block>
-    </div>
-  );
+import { Auth, Home } from "pages";
+
+class App extends Component {
+  render() {
+    return (
+      <div className="wrapper">
+        <Route exact path={["/", "/login"]} component={Auth} />
+        <Route exact path="/im" component={Home} />
+      </div>
+    );
+  }
 }
 
 export default App;
