@@ -42,13 +42,29 @@
     line-height: 20px;
   }
 
+  &__attachments{
+    display: flex;
+    margin-bottom: 5px;
+    &-item{
+      margin-right: 5px;
+      cursor: pointer;
+      img{
+        width: 45px;
+        height: 45px;
+        border-radius: 5px;
+
+      }
+    }
+  }
   &__icon-readed {
+    width: 20px;
     position: absolute;
     bottom: 22px;
     left: -25px;
+    fill: blue($color: #000000);
 
     &--no {
-      left: -20px;
+      left: -25px;
     }
   }
 

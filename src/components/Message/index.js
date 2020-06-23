@@ -7,8 +7,9 @@ import readedSvg from "assets/img/readed.svg";
 import noReadedSvg from "assets/img/noreaded.svg";
 
 import "./Message.scss";
+import Item from "antd/lib/list/Item";
 
-const Message = ({ avatar, user, text, date, isMe, isReaded }) => (
+const Message = ({ avatar, user, text, date, isMe, isReaded, attachments }) => (
   <div className={classNames("message", { "message--isme": isMe })}>
     <div className="message__content">
       {isMe && isReaded ? (
@@ -25,15 +26,24 @@ const Message = ({ avatar, user, text, date, isMe, isReaded }) => (
         />
       )}
       <div className="message__avatar">
-        <img src={avatar} alt={`Avatar ${user.fullname}`} />
+        <img src={avatar} className="avatar" alt={`Avatar ${user.fullname}`} />
       </div>
       <div className="message__info">
-        <div className="message__bubble">
-          <p className="message__text">{text}</p>
-        </div>
-        <span className="message__date">
-          {distanceInWordsToNow(date, { addSuffix: true, locale: ruLocale })}
-        </span>
+          <div className="message__bubble">
+            <p className="message__text">{text}</p>
+          </div>
+          <div className="message__attachments">
+          {attachments &&
+            attachments.map(Item => (
+              <div className="message__attachments-item">
+                  <img src={Item.url} alt={Item.filename}/>
+              </div>  
+            ))}
+        </div>  
+          <span className="message__date">
+            {distanceInWordsToNow(date, { addSuffix: true, locale: ruLocale })}
+          </span>
+        
       </div>
     </div>
   </div>
@@ -48,6 +58,7 @@ Message.propTypes = {
   text: PropTypes.string,
   date: PropTypes.string,
   user: PropTypes.object,
+  attachments: PropTypes.array,
 };
 
 export default Message;

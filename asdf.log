@@ -1,0 +1,478 @@
+[1mdiff --git a/package-lock.json b/package-lock.json[m
+[1mindex c2a2953..f4b0279 100644[m
+[1m--- a/package-lock.json[m
+[1m+++ b/package-lock.json[m
+[36m@@ -4934,6 +4934,11 @@[m
+       "resolved": "https://registry.npmjs.org/deep-is/-/deep-is-0.1.3.tgz",[m
+       "integrity": "sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ="[m
+     },[m
+[32m+[m[32m    "deepmerge": {[m
+[32m+[m[32m      "version": "2.2.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/deepmerge/-/deepmerge-2.2.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-R9hc1Xa/NOBi9WRVUWg19rl1UB7Tt4kuPd+thNJgFZoxXsTz7ncaPaeIm+40oSGuP33DfMb4sZt1QIGiJzC4EA=="[m
+[32m+[m[32m    },[m
+     "default-gateway": {[m
+       "version": "4.2.0",[m
+       "resolved": "https://registry.npmjs.org/default-gateway/-/default-gateway-4.2.0.tgz",[m
+[36m@@ -6603,6 +6608,32 @@[m
+         "mime-types": "^2.1.12"[m
+       }[m
+     },[m
+[32m+[m[32m    "formik": {[m
+[32m+[m[32m      "version": "2.1.4",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/formik/-/formik-2.1.4.tgz",[m
+[32m+[m[32m      "integrity": "sha512-oKz8S+yQBzuQVSEoxkqqJrKQS5XJASWGVn6mrs+oTWrBoHgByVwwI1qHiVc9GKDpZBU9vAxXYAKz2BvujlwunA==",[m
+[32m+[m[32m      "requires": {[m
+[32m+[m[32m        "deepmerge": "^2.1.1",[m
+[32m+[m[32m        "hoist-non-react-statics": "^3.3.0",[m
+[32m+[m[32m        "lodash": "^4.17.14",[m
+[32m+[m[32m        "lodash-es": "^4.17.14",[m
+[32m+[m[32m        "react-fast-compare": "^2.0.1",[m
+[32m+[m[32m        "scheduler": "^0.18.0",[m
+[32m+[m[32m        "tiny-warning": "^1.0.2",[m
+[32m+[m[32m        "tslib": "^1.10.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "scheduler": {[m
+[32m+[m[32m          "version": "0.18.0",[m
+[32m+[m[32m          "resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.18.0.tgz",[m
+[32m+[m[32m          "integrity": "sha512-agTSHR1Nbfi6ulI0kYNK0203joW2Y5W4po4l+v03tOoiJKpTBbxpNhWDvqc/4IcOw+KLmSiQLTasZ4cab2/UWQ==",[m
+[32m+[m[32m          "requires": {[m
+[32m+[m[32m            "loose-envify": "^1.1.0",[m
+[32m+[m[32m            "object-assign": "^4.1.1"[m
+[32m+[m[32m          }[m
+[32m+[m[32m        }[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+     "forwarded": {[m
+       "version": "0.1.2",[m
+       "resolved": "https://registry.npmjs.org/forwarded/-/forwarded-0.1.2.tgz",[m
+[36m@@ -8960,6 +8991,11 @@[m
+       "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.15.tgz",[m
+       "integrity": "sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A=="[m
+     },[m
+[32m+[m[32m    "lodash-es": {[m
+[32m+[m[32m      "version": "4.17.15",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.15.tgz",[m
+[32m+[m[32m      "integrity": "sha512-rlrc3yU3+JNOpZ9zj5pQtxnx2THmvRykwL4Xlxoa8I9lHBlVbbyPhgyPMioxVZ4NqyxaVVtaJnzsyOidQIhyyQ=="[m
+[32m+[m[32m    },[m
+     "lodash._reinterpolate": {[m
+       "version": "3.0.0",[m
+       "resolved": "https://registry.npmjs.org/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz",[m
+[36m@@ -12779,6 +12815,11 @@[m
+       "resolved": "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.7.tgz",[m
+       "integrity": "sha512-TAv1KJFh3RhqxNvhzxj6LeT5NWklP6rDr2a0jaTfsZ5wSZWHOGeqQyejUp3xxLfPt2UpyJEcVQB/zyPcmonNFA=="[m
+     },[m
+[32m+[m[32m    "react-fast-compare": {[m
+[32m+[m[32m      "version": "2.0.4",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-2.0.4.tgz",[m
+[32m+[m[32m      "integrity": "sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw=="[m
+[32m+[m[32m    },[m
+     "react-group": {[m
+       "version": "3.0.2",[m
+       "resolved": "https://registry.npmjs.org/react-group/-/react-group-3.0.2.tgz",[m
+[1mdiff --git a/package.json b/package.json[m
+[1mindex 7aff673..d1f5cd5 100644[m
+[1m--- a/package.json[m
+[1m+++ b/package.json[m
+[36m@@ -32,6 +32,7 @@[m
+     "eslint-plugin-react": "7.19.0",[m
+     "eslint-plugin-react-hooks": "^1.6.1",[m
+     "file-loader": "4.3.0",[m
+[32m+[m[32m    "formik": "^2.1.4",[m
+     "fs-extra": "^8.1.0",[m
+     "html-webpack-plugin": "4.0.0-beta.11",[m
+     "identity-obj-proxy": "3.0.0",[m
+[1mdiff --git a/src/App.js b/src/App.js[m
+[1mindex 31af199..69c9f2e 100644[m
+[1m--- a/src/App.js[m
+[1m+++ b/src/App.js[m
+[36m@@ -7,7 +7,7 @@[m [mclass App extends Component {[m
+   render() {[m
+     return ([m
+       <div className="wrapper">[m
+[31m-        <Route exact path={["/", "/login"]} component={Auth} />[m
+[32m+[m[32m        <Route exact path={["/", "/login","/register"]} component={Auth} />[m
+         <Route exact path="/im" component={Home} />[m
+       </div>[m
+     );[m
+[1mdiff --git a/src/assets/img/readed.svg b/src/assets/img/readed.svg[m
+[1mindex 6a01f30..31a723d 100644[m
+[1m--- a/src/assets/img/readed.svg[m
+[1m+++ b/src/assets/img/readed.svg[m
+[36m@@ -2,7 +2,7 @@[m
+ <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->[m
+ <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">[m
+ <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"[m
+[31m-	 width="594.149px" height="594.149px" viewBox="0 0 594.149 594.149" style="enable-background:new 0 0 594.149 594.149;"[m
+[32m+[m	[32m width="594.149px" height="594.149px" fill="blue" viewBox="0 0 594.149 594.149" style="enable-background:new 0 0 594.149 594.149;"[m
+ 	 xml:space="preserve">[m
+ <g>[m
+ 	<g id="done-all">[m
+[1mdiff --git a/src/components/Message/Message.scss b/src/components/Message/Message.scss[m
+[1mindex a90e4a1..580c15e 100644[m
+[1m--- a/src/components/Message/Message.scss[m
+[1m+++ b/src/components/Message/Message.scss[m
+[36m@@ -42,13 +42,29 @@[m
+     line-height: 20px;[m
+   }[m
+ [m
+[32m+[m[32m  &__attachments{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    margin-bottom: 5px;[m
+[32m+[m[32m    &-item{[m
+[32m+[m[32m      margin-right: 5px;[m
+[32m+[m[32m      cursor: pointer;[m
+[32m+[m[32m      img{[m
+[32m+[m[32m        width: 45px;[m
+[32m+[m[32m        height: 45px;[m
+[32m+[m[32m        border-radius: 5px;[m
+[32m+[m
+[32m+[m[32m      }[m
+[32m+[m[32m    }[m
+[32m+[m[32m  }[m
+   &__icon-readed {[m
+[32m+[m[32m    width: 20px;[m
+     position: absolute;[m
+     bottom: 22px;[m
+     left: -25px;[m
+[32m+[m[32m    fill: blue($color: #000000);[m
+ [m
+     &--no {[m
+[31m-      left: -20px;[m
+[32m+[m[32m      left: -25px;[m
+     }[m
+   }[m
+ [m
+[1mdiff --git a/src/components/Message/index.js b/src/components/Message/index.js[m
+[1mindex 1730dc2..8aa1ae4 100644[m
+[1m--- a/src/components/Message/index.js[m
+[1m+++ b/src/components/Message/index.js[m
+[36m@@ -7,8 +7,9 @@[m [mimport readedSvg from "assets/img/readed.svg";[m
+ import noReadedSvg from "assets/img/noreaded.svg";[m
+ [m
+ import "./Message.scss";[m
+[32m+[m[32mimport Item from "antd/lib/list/Item";[m
+ [m
+[31m-const Message = ({ avatar, user, text, date, isMe, isReaded }) => ([m
+[32m+[m[32mconst Message = ({ avatar, user, text, date, isMe, isReaded, attachments }) => ([m
+   <div className={classNames("message", { "message--isme": isMe })}>[m
+     <div className="message__content">[m
+       {isMe && isReaded ? ([m
+[36m@@ -25,15 +26,24 @@[m [mconst Message = ({ avatar, user, text, date, isMe, isReaded }) => ([m
+         />[m
+       )}[m
+       <div className="message__avatar">[m
+[31m-        <img src={avatar} alt={`Avatar ${user.fullname}`} />[m
+[32m+[m[32m        <img src={avatar} className="avatar" alt={`Avatar ${user.fullname}`} />[m
+       </div>[m
+       <div className="message__info">[m
+[31m-        <div className="message__bubble">[m
+[31m-          <p className="message__text">{text}</p>[m
+[31m-        </div>[m
+[31m-        <span className="message__date">[m
+[31m-          {distanceInWordsToNow(date, { addSuffix: true, locale: ruLocale })}[m
+[31m-        </span>[m
+[32m+[m[32m          <div className="message__bubble">[m
+[32m+[m[32m            <p className="message__text">{text}</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div className="message__attachments">[m
+[32m+[m[32m          {attachments &&[m
+[32m+[m[32m            attachments.map(Item => ([m
+[32m+[m[32m              <div className="message__attachments-item">[m
+[32m+[m[32m                  <img src={Item.url} alt={Item.filename}/>[m
+[32m+[m[32m              </div>[m[41m  [m
+[32m+[m[32m            ))}[m
+[32m+[m[32m        </div>[m[41m  [m
+[32m+[m[32m          <span className="message__date">[m
+[32m+[m[32m            {distanceInWordsToNow(date, { addSuffix: true, locale: ruLocale })}[m
+[32m+[m[32m          </span>[m
+[32m+[m[41m        [m
+       </div>[m
+     </div>[m
+   </div>[m
+[36m@@ -48,6 +58,7 @@[m [mMessage.propTypes = {[m
+   text: PropTypes.string,[m
+   date: PropTypes.string,[m
+   user: PropTypes.object,[m
+[32m+[m[32m  attachments: PropTypes.array,[m
+ };[m
+ [m
+ export default Message;[m
+[1mdiff --git a/src/modules/RegisterForm/components/RegisterForm.jsx b/src/modules/RegisterForm/components/RegisterForm.jsx[m
+[1mindex 24911c4..ab8921b 100644[m
+[1m--- a/src/modules/RegisterForm/components/RegisterForm.jsx[m
+[1m+++ b/src/modules/RegisterForm/components/RegisterForm.jsx[m
+[36m@@ -1,87 +1,129 @@[m
+[31m-import React, { Component } from "react";[m
+[31m-import { Form, Input, Checkbox, Icon } from "antd";[m
+[32m+[m[32mimport React from "react";[m
+[32m+[m[32mimport { Form, Input, Icon } from "antd";[m
+ import { Link, Route } from "react-router-dom";[m
+ [m
+ import { Button, Block } from "components";[m
+ [m
+[31m-class RegisterForm extends Component {[m
+[31m-  render() {[m
+[31m-    const success = false;[m
+[31m-    return ([m
+[31m-      <div>[m
+[31m-        <div className="auth__top">[m
+[31m-          <h2>Регистрация</h2>[m
+[31m-          <p>Для входа в чат,вам надо Зарегистрироваться</p>[m
+[31m-        </div>[m
+[31m-        <Block>[m
+[31m-          {!success ? ([m
+[31m-            <Form onSubmit={this.handleSubmit} className="login-form">[m
+[31m-              <Form.Item validateStatus="success" hasFeedback>[m
+[31m-                <Input[m
+[31m-                  prefix={[m
+[31m-                    <Icon type="mail" style={{ color: "rgba(0,0,0,.25)" }} />[m
+[31m-                  }[m
+[31m-                  size="large"[m
+[31m-                  placeholder="E-Mail"[m
+[31m-                  validateStatus="success"[m
+[31m-                />[m
+[31m-              </Form.Item>[m
+[31m-              <Form.Item validateStatus="success" hasFeedback>[m
+[31m-                <Input[m
+[31m-                  prefix={[m
+[31m-                    <Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />[m
+[31m-                  }[m
+[31m-                  size="large"[m
+[31m-                  type="password"[m
+[31m-                  placeholder="Ваше имя"[m
+[31m-                />[m
+[31m-              </Form.Item>[m
+[31m-              <Form.Item validateStatus="success" hasFeedback>[m
+[31m-                <Input[m
+[31m-                  prefix={[m
+[31m-                    <Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />[m
+[31m-                  }[m
+[31m-                  size="large"[m
+[31m-                  type="password"[m
+[31m-                  placeholder="Пароль"[m
+[31m-                />[m
+[31m-              </Form.Item>[m
+[31m-              <Form.Item validateStatus="success" hasFeedback>[m
+[31m-                <Input[m
+[31m-                  prefix={[m
+[31m-                    <Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />[m
+[31m-                  }[m
+[31m-                  size="large"[m
+[31m-                  type="password"[m
+[31m-                  placeholder="Повторите пароль"[m
+[31m-                />[m
+[31m-              </Form.Item>[m
+[31m-              <Form.Item>[m
+[31m-                <Button type="primary" size="large">[m
+[31m-                  Зарегистрироваться[m
+[31m-                </Button>[m
+[31m-              </Form.Item>[m
+[32m+[m[32mconst success= "";[m
+[32m+[m
+[32m+[m[32mconst RegisterForm = props =>{[m
+[32m+[m[32m  const {[m
+[32m+[m[32m    values,[m
+[32m+[m[32m    touched,[m
+[32m+[m[32m    errors,[m
+[32m+[m[32m    handleChange,[m
+[32m+[m[32m    handleBlur,[m
+[32m+[m[32m    handleSubmit,[m
+[32m+[m[32m    isValid,[m
+[32m+[m[32m    isSubmitting[m[41m [m
+[32m+[m[32m  } = props;[m
+[32m+[m[32m  return([m
+[32m+[m[32m    <div>[m
+[32m+[m[32m    <div className="auth__top">[m
+[32m+[m[32m      <h2>Регистрация</h2>[m
+[32m+[m[32m      <p>Для входа в чат,вам надо Зарегистрироваться</p>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <Block>[m
+[32m+[m[32m      {!success ? ([m
+[32m+[m[32m        <Form onSubmit={handleSubmit} className="login-form">[m
+[32m+[m[32m          <Form.Item[m
+[32m+[m[32m          help = {!touched.email ? '' :[m[41m [m
+[32m+[m[32m          errors.email ?[m[41m [m
+[32m+[m[32m          errors.email[m
+[32m+[m[32m          :[m[41m [m
+[32m+[m[32m          ""}[m
+[32m+[m[32m          validateStatus={[m
+[32m+[m[32m            !touched.email ? '' :[m[41m [m
+[32m+[m[32m            errors.email ?[m[41m [m
+[32m+[m[32m            "error"[m
+[32m+[m[32m            :[m[41m [m
+[32m+[m[32m            "success"[m
+[32m+[m[32m          } hasFeedback>[m
+[32m+[m[32m            <Input[m
+[32m+[m[32m              id="email"[m
+[32m+[m[32m              prefix={[m
+[32m+[m[32m                <Icon type="mail" style={{ color: "rgba(0,0,0,.25)" }} />[m
+[32m+[m[32m              }[m
+[32m+[m[32m              size="large"[m
+[32m+[m[32m              placeholder="E-Mail"[m
+[32m+[m[32m              value={values.email}[m
+[32m+[m[32m              onChange={handleChange}[m
+[32m+[m[32m              onBlur={handleBlur}[m
+[32m+[m[32m            />[m
+[32m+[m[32m          </Form.Item>[m
+[32m+[m[32m          <Form.Item validateStatus= { success } hasFeedback>[m
+[32m+[m[32m            <Input[m
+[32m+[m[41m            [m
+[32m+[m[32m              prefix={[m
+[32m+[m[32m                <Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />[m
+[32m+[m[32m              }[m
+[32m+[m[41m              [m
+[32m+[m[32m              size="large"[m
+[32m+[m[32m              placeholder="Ваше имя"[m
+[32m+[m[41m              [m
+[32m+[m[32m            />[m
+[32m+[m[32m          </Form.Item>[m
+[32m+[m[32m          <Form.Item[m[41m [m
+[32m+[m[32m          help = {!touched.password ? '' :[m[41m [m
+[32m+[m[32m          errors.password ?[m[41m [m
+[32m+[m[32m          errors.password[m
+[32m+[m[32m          :[m[41m [m
+[32m+[m[32m          "" }[m
+[32m+[m[32m          validateStatus={[m
+[32m+[m[32m            !touched.password ? '' :[m[41m [m
+[32m+[m[32m            errors.password ?[m[41m [m
+[32m+[m[32m            "error"[m
+[32m+[m[32m            :[m[41m [m
+[32m+[m[32m            "success"[m
+[32m+[m[32m          } hasFeedback>[m
+[32m+[m[32m            <Input[m
+[32m+[m[32m            id="password"[m
+[32m+[m[32m              prefix={[m
+[32m+[m[32m                <Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />[m
+[32m+[m[32m              }[m
+[32m+[m[32m              size="large"[m
+[32m+[m[32m              type="password"[m
+[32m+[m[32m              placeholder="Пароль"[m
+[32m+[m[32m              value={values.password}[m
+[32m+[m[32m              onChange={handleChange}[m
+[32m+[m[32m              onBlur={handleBlur}[m
+[32m+[m[32m            />[m
+[32m+[m[32m          </Form.Item>[m
+[32m+[m[32m          <Form.Item validateStatus={ success } hasFeedback>[m
+[32m+[m[32m            <Input[m
+[32m+[m[32m              prefix={[m
+[32m+[m[32m                <Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />[m
+[32m+[m[32m              }[m
+[32m+[m[32m              size="large"[m
+[32m+[m[32m              type="password"[m
+[32m+[m[32m              placeholder="Повторите пароль"[m
+[32m+[m[32m            />[m
+[32m+[m[32m          </Form.Item>[m
+[32m+[m[32m          <Form.Item>[m
+[32m+[m[32m            <Button onClick={ handleSubmit } type="primary" size="large">[m
+[32m+[m[32m              Зарегистрироваться[m
+[32m+[m[32m            </Button>[m
+[32m+[m[32m          </Form.Item>[m
+ [m
+[31m-              <Link className="auth__register-link" to="/login">[m
+[31m-                Войти в аккаунт[m
+[31m-              </Link>[m
+[31m-            </Form>[m
+[31m-          ) : ([m
+[31m-            <div className="auth__success-block">[m
+[31m-              <div>[m
+[31m-                <Icon type="info-circle" theme="twoTone" />[m
+[31m-              </div>[m
+[31m-              <h2>Подтвердите свой акканут</h2>[m
+[31m-              <p>[m
+[31m-                На вашу почту отправлено письмо с ссылкой на подтверждение[m
+[31m-                аккаунта[m
+[31m-              </p>[m
+[31m-            </div>[m
+[31m-          )}[m
+[31m-        </Block>[m
+[31m-      </div>[m
+[31m-    );[m
+[31m-  }[m
+[32m+[m[32m          <Link className="auth__register-link" to="/login">[m
+[32m+[m[32m            Войти в аккаунт[m
+[32m+[m[32m          </Link>[m
+[32m+[m[32m        </Form>[m
+[32m+[m[32m      ) : ([m
+[32m+[m[32m        <div className="auth__success-block">[m
+[32m+[m[32m          <div>[m
+[32m+[m[32m            <Icon type="info-circle" theme="twoTone" />[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <h2>Подтвердите свой акканут</h2>[m
+[32m+[m[32m          <p>[m
+[32m+[m[32m            На вашу почту отправлено письмо с ссылкой на подтверждение[m
+[32m+[m[32m            аккаунта[m
+[32m+[m[32m          </p>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      )}[m
+[32m+[m[32m    </Block>[m
+[32m+[m[32m  </div>[m
+[32m+[m[32m  )[m
+ }[m
+ [m
+ export default RegisterForm;[m
+[1mdiff --git a/src/modules/RegisterForm/containers/RegisterForm.js b/src/modules/RegisterForm/containers/RegisterForm.js[m
+[1mindex 3abfd1d..18ad7e8 100644[m
+[1m--- a/src/modules/RegisterForm/containers/RegisterForm.js[m
+[1m+++ b/src/modules/RegisterForm/containers/RegisterForm.js[m
+[36m@@ -1,3 +1,33 @@[m
+ import RegisterForm from "../components/RegisterForm";[m
+[32m+[m[32mimport { withFormik } from 'formik';[m
+ [m
+[31m-export default RegisterForm;[m
+[32m+[m[32mexport default withFormik({[m
+[32m+[m[32m    mapPropsToValues: () => ({}),[m
+[32m+[m[32m    validate: values => {[m
+[32m+[m[32m      let errors = {};[m
+[32m+[m[32m      if (!values.email) {[m
+[32m+[m[32m        errors.email = 'Please enter valid email';[m
+[32m+[m[32m      } else if ([m
+[32m+[m[32m        !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test([m
+[32m+[m[32m          values.email[m
+[32m+[m[32m        )[m
+[32m+[m[32m      ) {[m
+[32m+[m[32m        errors.email = 'Invalid email address';[m
+[32m+[m[32m      }[m
+[32m+[m[32m      if(!values.password){[m
+[32m+[m[32m          errors.password = 'Please provide password';[m
+[32m+[m[32m      }else if(!/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/i.test(values.password)){[m
+[32m+[m[32m        errors.password = 'Password should contain at least 1 uppercase and number'[m
+[32m+[m[32m      }[m
+[32m+[m[32m      return errors;[m
+[32m+[m[32m    },[m
+[32m+[m[41m  [m
+[32m+[m[32m    handleSubmit: (values, { setSubmitting }) => {[m
+[32m+[m[32m      setTimeout(() => {[m
+[32m+[m[32m        alert(JSON.stringify(values, null, 2));[m
+[32m+[m[32m        setSubmitting(false);[m
+[32m+[m[32m      }, 1000);[m
+[32m+[m[32m    },[m
+[32m+[m[41m  [m
+[32m+[m[32m    displayName: 'RegisterForm',[m[41m [m
+[32m+[m[32m  })(RegisterForm);[m
+[1mdiff --git a/src/pages/Home/index.jsx b/src/pages/Home/index.jsx[m
+[1mindex 1a86070..dd0a10d 100644[m
+[1m--- a/src/pages/Home/index.jsx[m
+[1m+++ b/src/pages/Home/index.jsx[m
+[36m@@ -9,7 +9,19 @@[m [mconst Home = () => ([m
+     <Message[m
+       avatar="https://pristor.ru/wp-content/uploads/2018/05/%D0%90%D0%BD%D0%B8%D0%BC%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8-%D0%BD%D0%B0-%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD-%D0%B4%D0%BB%D1%8F-%D0%B7%D0%B0%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8-%D0%BB%D1%83%D1%87%D1%88%D0%B0%D1%8F-%D0%BF%D0%BE%D0%B4%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-2018-8.jpg"[m
+       text="Салам asfbkjasbfsdjhdasbkfhdskvkhgsdvbfsbhfsjkbfhskasdasdasdasdasdasdadsadsadassdasd"[m
+[31m-      date="Sun Apr 21 2019 21:30:07"[m
+[32m+[m[32m      date="Sun Apr 21 2020 21:30:07"[m
+[32m+[m[32m      attachments={[{[m
+[32m+[m[32m        filename: 'image.jpg',[m
+[32m+[m[32m        url: 'https://source.unsplash.com/collection/190727/100x100'[m
+[32m+[m[32m      },[m
+[32m+[m[32m      {[m
+[32m+[m[32m        filename: 'image.jpg',[m
+[32m+[m[32m        url: 'https://source.unsplash.com/collection/190727/100x100'[m
+[32m+[m[32m      },{[m
+[32m+[m[32m        filename: 'image.jpg',[m
+[32m+[m[32m        url: 'https://source.unsplash.com/collection/190727/100x100'[m
+[32m+[m[32m      }[m
+[32m+[m[32m      ]}[m
+     />[m
+     <Message[m
+       avatar="https://sm.ign.com/t/ign_de/blogroll/b/boruto-nar/boruto-naruto-the-movie-coming-to-us-theaters_kp62.h720.jpg"[m
