@@ -3,6 +3,7 @@ import { Form, Input, Icon } from "antd";
 import { Link, Route } from "react-router-dom";
 
 import { Button, Block } from "components";
+import { validateField } from "utils/helpers";
 
 const success= "";
 
@@ -32,13 +33,7 @@ const RegisterForm = props =>{
           errors.email
           : 
           ""}
-          validateStatus={
-            !touched.email ? '' : 
-            errors.email ? 
-            "error"
-            : 
-            "success"
-          } hasFeedback>
+          validateStatus= { validateField("email", touched, errors) } hasFeedback>
             <Input
               id="email"
               prefix={
@@ -69,13 +64,7 @@ const RegisterForm = props =>{
           errors.password
           : 
           "" }
-          validateStatus={
-            !touched.password ? '' : 
-            errors.password ? 
-            "error"
-            : 
-            "success"
-          } hasFeedback>
+          validateStatus= { validateField("password", touched, errors) } hasFeedback>
             <Input
             id="password"
               prefix={
@@ -89,7 +78,7 @@ const RegisterForm = props =>{
               onBlur={handleBlur}
             />
           </Form.Item>
-          <Form.Item validateStatus={ success } hasFeedback>
+          <Form.Item validateStatus= { validateField("password", touched, errors) } hasFeedback>
             <Input
               prefix={
                 <Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />
