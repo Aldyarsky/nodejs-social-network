@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
+import { Emoji } from "emoji-mart";
 
 import { convertCurrentTime } from "utils/helpers";
 
@@ -8,7 +9,7 @@ import waveSvg from "assets/img/wave.svg";
 import playSvg from "assets/img/play.svg";
 import pauseSvg from "assets/img/pause.svg";
 
-import { Time, IconReaded } from "../";
+import { Time, IconReaded, Avatar } from "../";
 
 import "./Message.scss";
 
@@ -95,26 +96,30 @@ const Message = ({
   isMe,
   isReaded,
   attachments,
-  isTyping
-  }) => {
+  isTyping,
+}) => {
   return (
     <div
       className={classNames("message", {
         "message--isme": isMe,
         "message--is-typing": isTyping,
         "message--is-audio": audio,
-        "message--image": attachments && attachments.length === 1
+        "message--image": attachments && attachments.length === 1,
       })}
     >
       <div className="message__content">
         <IconReaded isMe={isMe} isReaded={isReaded} />
         <div className="message__avatar">
-          <img src={avatar} alt={`Avatar ${user.fullname}`} />
+          <Avatar user={user} />
         </div>
         <div className="message__info">
           {(audio || text || isTyping) && (
             <div className="message__bubble">
-              {text && <p className="message__text">{text}</p>}
+              {text && (
+                <p className="message__text">
+                  <Emoji emoji=":santa::skin-tone-3:" set="apple" size={16} />
+                </p>
+              )}
               {isTyping && (
                 <div className="message__typing">
                   <span />
@@ -148,7 +153,7 @@ const Message = ({
 };
 
 Message.defaultProps = {
-  user: {}
+  user: {},
 };
 Message.propTypes = {
   avatar: PropTypes.string,
@@ -159,7 +164,7 @@ Message.propTypes = {
   isMe: PropTypes.bool,
   isReaded: PropTypes.bool,
   isTyping: PropTypes.bool,
-  audio: PropTypes.string
+  audio: PropTypes.string,
 };
 
 export default Message;

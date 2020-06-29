@@ -5,7 +5,7 @@ import isToday from "date-fns/is_today";
 
 import { IconReaded, Avatar } from "../";
 
-const getMessageTime = created_at => {
+const getMessageTime = (created_at) => {
   if (isToday(created_at)) {
     return format(created_at, "HH:mm");
   } else {
@@ -13,11 +13,22 @@ const getMessageTime = created_at => {
   }
 };
 
-const DialogItem = ({ user, undread, created_at, text, isMe }) => (
+const DialogItem = ({
+  _id,
+  user,
+  undread,
+  created_at,
+  text,
+  isMe,
+  currentDialogId,
+  onSelect,
+}) => (
   <div
     className={classNames("dialogs__item", {
-      "dialogs__item--online": user.isOnline
+      "dialogs__item--online": user.isOnline,
+      "dialogs__item--selected": currentDialogId === _id,
     })}
+    onClick={onSelect.bind(this, _id)}
   >
     <div className="dialogs__item-avatar">
       <Avatar user={user} />
