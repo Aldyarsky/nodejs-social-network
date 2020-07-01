@@ -10,12 +10,14 @@ export default ({ isAuth, values, errors }) => {
             password: value => {
                 if(!value){
                     errors.password = 'Please provide password';
-                }else if(!/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/i.test(value)){
-                  errors.password = isAuth ? "Wrong Password!" 
-                  : "Password should contain at least 1 uppercase and 1 number";
-                }
+                  } else if (
+                    !isAuth &&
+                    !/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/.test(value)
+                  ) {
+                    errors.password = "Password should contain at least 1 uppercase and 1 number";
             }
-    };
-
+          }
+  };
+    
     Object.keys(values).forEach(key => rules[key] && rules[key](values[key]));
 };
